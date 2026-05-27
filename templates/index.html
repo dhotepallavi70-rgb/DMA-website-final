@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="popup" id="popup">
+    <div class="popup-box">
+        <button onclick="closePopup()" class="close">×</button>
+        <div class="popup-badge">Admissions Open</div>
+        <h2>Enroll Now!</h2>
+        <p>Class 8, 9 and 10 Mathematics batches are now open.</p>
+        <p class="popup-small">Build strong concepts, confidence and exam success with Dhote Maths Academy.</p>
+        <a href="{{ url_for('contact') }}" class="btn full-btn">Enquire for Admission</a>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="tag">Professional Mathematics Coaching</p>
+        <h1>Dhote Maths Academy</h1>
+        <h2>Where Logic Meets Success</h2>
+        <p>
+            A focused mathematics academy for Class 8, 9 and 10 students, designed to build
+            concept clarity, confidence and strong exam performance.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="{{ url_for('courses') }}" class="btn">Explore Courses</a>
+            <a href="{{ url_for('contact') }}" class="btn secondary">Admission Enquiry</a>
+        </div>
+    </div>
+</section>
+
+<section class="intro-section">
+    <div>
+        <p class="section-label">Why Choose Us</p>
+        <h2>Mathematics Learning Made Simple, Strong and Result-Oriented</h2>
+        <p>
+            Dhote Maths Academy helps students understand mathematics step by step.
+            We focus on strong basics, clear explanation, regular practice, chapter-wise tests
+            and personal guidance so that every student can improve with confidence.
+        </p>
+    </div>
+
+    <div class="intro-card">
+        <h3>Admissions Open</h3>
+        <p>For Class 8, 9 and 10 students.</p>
+        <a href="{{ url_for('contact') }}">Apply Now →</a>
+    </div>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <div class="icon">📘</div>
+        <h3>Concept Clarity</h3>
+        <p>Each topic is explained from basic level to exam-level problem solving.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">✍️</div>
+        <h3>Regular Practice</h3>
+        <p>Practice sheets, homework, tests and revision improve accuracy and speed.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🏆</div>
+        <h3>Student Success</h3>
+        <p>Focused preparation helps students score better and overcome fear of maths.</p>
+    </div>
+</section>
+
+{% endblock %}

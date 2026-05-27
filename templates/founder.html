@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page-header">
+    <p>Founder & Mentor</p>
+    <h1>Guidance That Shapes Student Success</h1>
+</section>
+
+<section class="founder-section">
+    <div class="founder-photo">
+        <img src="{{ url_for('static', filename='images/founder/founder.png') }}" alt="Founder Photo" class="founder-img">
+    </div>
+
+    <div class="founder-info">
+        <p class="section-label">Founder & Mentor</p>
+        <h2>Prof. Lakhan Sanjay Dhote</h2>
+        <h3>M.Sc. Mathematics, B.Ed. | 4 Years Experience</h3>
+
+        <p>
+            The academy is guided by a passionate mathematics mentor with a strong academic
+            background and a student-focused teaching approach.
+        </p>
+
+        <p>
+            With 4 years of experience, the mentor focuses on building strong concepts,
+            disciplined study habits, regular practice and confidence among Class 8, 9
+            and 10 students.
+        </p>
+
+        <p>
+            The teaching approach is simple, clear and result-oriented, helping students
+            overcome mathematics fear and move towards academic excellence.
+        </p>
+    </div>
+</section>
+
+<section class="content">
+    <h2>Mentor's Vision</h2>
+    <p>
+        To create a learning environment where students understand mathematics deeply,
+        practice consistently and develop the confidence to perform well in exams.
+    </p>
+
+    <div class="feature-list">
+        <div>Strong subject knowledge</div>
+        <div>Student-friendly teaching</div>
+        <div>Clear concept explanation</div>
+        <div>Regular performance guidance</div>
+        <div>Focused exam preparation</div>
+        <div>Motivational support</div>
+    </div>
+</section>
+
+{% endblock %}

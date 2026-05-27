@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page-header">
+    <p>Contact Us</p>
+    <h1>Admission Enquiry</h1>
+</section>
+
+<section class="contact-section">
+    <div class="contact-info">
+        <p class="section-label">Enroll Now</p>
+        <h2>Admissions Open for Class 8, 9 and 10</h2>
+        <p>
+            Fill the enquiry form to get details about batches, timings and admission process.
+            Our team will contact you soon.
+        </p>
+
+        <div class="contact-box">
+            <h3>Mobile Number</h3>
+            <p>8208983620</p>
+            <a class="mini-whatsapp" href="https://wa.me/918208983620?text=Hello%20Dhote%20Maths%20Academy,%20I%20want%20admission%20details." target="_blank">Message on WhatsApp</a>
+        </div>
+
+        <div class="contact-box">
+            <h3>Academy Address</h3>
+            <p>Parshuram Chowk, Bypass Road, Sahakar Bhavan Javal, Mangrulnath, Dist-Washim</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Courses Available</h3>
+            <p>Class 8, Class 9 and Class 10 Mathematics</p>
+        </div>
+    </div>
+
+    <form method="POST" class="contact-form">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <p class="flash">{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <input type="text" name="name" placeholder="Student / Parent Name" required>
+        <input type="text" name="phone" placeholder="Mobile Number" required>
+
+        <select name="student_class" required>
+            <option value="">Select Class</option>
+            <option value="Class 8">Class 8</option>
+            <option value="Class 9">Class 9</option>
+            <option value="Class 10">Class 10</option>
+        </select>
+
+        <textarea name="message" placeholder="Write your admission enquiry" required></textarea>
+        <button type="submit" class="btn">Submit Enquiry</button>
+    </form>
+</section>
+
+{% endblock %}

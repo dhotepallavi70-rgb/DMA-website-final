@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="page-header">
+    <p>Testimonials</p>
+    <h1>Our Student Achievers</h1>
+</section>
+
+<section class="content">
+    <p class="section-label">Student Success</p>
+    <h2>Achievements That Inspire Us</h2>
+    <p>
+        These results reflect the dedication of students, trust of parents and the consistent
+        academic support provided by Dhote Maths Academy. We congratulate all our achievers
+        and wish them continued success.
+    </p>
+</section>
+
+<section class="testimonial-grid">
+
+    <div class="testimonial-card topper">
+        <img src="{{ url_for('static', filename='images/testimonials/sakham.jpg') }}" alt="Sakham Cheke">
+        <div class="rank-badge">Perfect Score</div>
+        <h3>Sakham Cheke</h3>
+        <p class="marks">100/100</p>
+        <p>Outstanding achievement in Mathematics. Your dedication and consistent hard work have resulted in a perfect score.</p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="{{ url_for('static', filename='images/testimonials/supriya.png') }}" alt="Supriya Shrungare">
+        <div class="rank-badge">Excellent Score</div>
+        <h3>Supriya Shrungare</h3>
+        <p class="marks">95/100</p>
+        <p>Your focus, discipline and regular practice have brought a wonderful result. Congratulations on your excellent performance.</p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="{{ url_for('static', filename='images/testimonials/ankit.jpg') }}" alt="Ankit Kulkarni">
+        <div class="rank-badge">Excellent Score</div>
+        <h3>Ankit Kulkarni</h3>
+        <p class="marks">94/100</p>
+        <p>A strong performance achieved through confidence and consistent preparation. Congratulations and best wishes.</p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="{{ url_for('static', filename='images/testimonials/lalit.jpg') }}" alt="Lalit Parande">
+        <div class="rank-badge">Excellent Score</div>
+        <h3>Lalit Parande</h3>
+        <p class="marks">93/100</p>
+        <p>Your achievement reflects hard work, commitment and a positive learning attitude. Keep shining.</p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="{{ url_for('static', filename='images/testimonials/sumit.jpg') }}" alt="Sumit Bhagat">
+        <div class="rank-badge">Great Score</div>
+        <h3>Sumit Bhagat</h3>
+        <p class="marks">90/100</p>
+        <p>A proud achievement through regular practice and determination. Congratulations on your success.</p>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="{{ url_for('static', filename='images/testimonials/bhavika.jpg') }}" alt="Bhavika Mandhare">
+        <div class="rank-badge">Great Score</div>
+        <h3>Bhavika Mandhare</h3>
+        <p class="marks">90/100</p>
+        <p>Your dedication and confidence have resulted in a great achievement. Congratulations and best wishes for your future.</p>
+    </div>
+
+</section>
+
+{% endblock %}
